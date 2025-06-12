@@ -340,3 +340,4 @@
       URL.revokeObjectURL(url);
       alert("CV download started!");
     });
+    // Initialize the CV download button
