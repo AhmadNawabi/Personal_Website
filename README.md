@@ -69,3 +69,60 @@ I specialize in building:
 ```bash
 git clone https://github.com/AhmadNawabi/Personal_Website.git
 cd Personal_Website
+
+2. Install dependencies
+
+npm install
+
+
+3. Run the project
+
+Quick preview (no server):
+
+open index.html     # macOS
+start index.html    # Windows
+xdg-open index.html # Linux
+
+
+Development server (recommended):
+
+npx live-server --port=3000
+
+
+➡️ Access at: http://localhost:3000
+
+</details> <details> <summary><strong>🔍 Debugging Tips</strong></summary><br>
+
+🎭 3D Performance: Use Chrome’s Three.js Inspector (DevTools → Console)
+
+📱 Mobile Testing: Run npx serve -l 3000 and scan QR code on phone
+
+⏱ Animation Debug: Use gsap.timeline({ paused: true }) for frame-by-frame control
+
+</details> <details> <summary><strong>🧠 Development Challenges & Solutions</strong></summary><br>
+Challenge	Solution
+⏳ 3D Model Loading Speed	Compressed textures & 40% reduced polycount
+📱 Mobile Animation Jank	will-change: transform for GPU acceleration
+🌐 Cross-Browser Issues	Feature detection + GSAP fallbacks
+</details> <details> <summary><strong>🤝 How to Contribute</strong></summary><br>
+
+Fork the repository
+
+Create a feature branch:
+
+git checkout -b feature/your-feature
+
+
+Commit your changes:
+
+git commit -m "feat: describe your change"
+
+
+Push and open a Pull Request 🚀
+
+</details>
+📜 License
+
+MIT License — open-source with attribution. See LICENSE for details.
+
+<p align="center">🔨 Built with passion by <a href="https://github.com/AhmadNawabi">Ahmad Nawabi</a> | 🌟 Thank you for visiting! 🚀</p> ```
