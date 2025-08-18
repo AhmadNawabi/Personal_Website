@@ -31,55 +31,51 @@
 - Node.js (optional for live-server)  
 
 ### 🖥️ Local Installation  
-```bash
 # Clone repository
-git clone https://github.com/AhmadNawabi/Personal_Website.git
-cd Personal_Website
+git clone https://github.com/AhmadNawabi/Personal_Website.git && cd Personal_Website
 # Install dependencies (if any)
 npm install
+
 ⚡ Running the Project
-Method 1: Simple Browser Launch
+• Method 1 [Simple Browser Launch]:
+  bash
+  open index.html        # Mac
+  start index.html       # Windows
+  xdg-open index.html    # Linux
 
-bash
-open index.html        # Mac
-start index.html       # Windows
-xdg-open index.html    # Linux
-Method 2: Development Server (Recommended)
-
-bash
-npx live-server --port=3000
-Access at: http://localhost:3000
+• Method 2 [Recommended Development Server]:
+  bash
+  npx live-server --port=3000
+  → Access: http://localhost:3000
 
 🔍 Debugging Tips
-3D Performance: Use Chrome's Three.js Inspector (DevTools > Console)
-
-Mobile Testing:
-
-bash
-npx serve -l 3000
-Then scan QR code with phone
-
-Animation Debugging: Add gsap.timeline({paused:true}) for frame-by-frame control
+• 3D Performance: Chrome's Three.js Inspector (DevTools > Console)
+• Mobile Testing:
+  bash
+  npx serve -l 3000
+  → Scan QR with phone
+• Animation Debug: gsap.timeline({paused:true})
 
 🧠 Development Challenges & Solutions
-Challenge	Solution
-3D Model Loading Speed	Compressed textures, reduced polycount by 40%
-Mobile Animation Jank	Implemented will-change: transform CSS
-Cross-Browser Issues	Feature detection + GSAP fallbacks
+┌──────────────────────────┬──────────────────────────────────────┐
+│         Challenge        │              Solution               │
+├──────────────────────────┼──────────────────────────────────────┤
+│ 3D Model Loading Speed   │ Compressed textures, -40% polycount │
+│ Mobile Animation Jank    │ will-change: transform CSS          │
+│ Cross-Browser Issues     │ Feature detection + GSAP fallbacks  │
+└──────────────────────────┴──────────────────────────────────────┘
+
 🤝 How to Contribute
-Fork the repository
-
-Create a feature branch:
-
-bash
-git checkout -b feature/your-feature
-Commit changes:
-
-bash
-git commit -m "feat: add your feature"
-Push and open a PR
+1. Fork repository
+2. Create branch:
+   bash
+   git checkout -b feature/your-feature
+3. Commit changes:
+   bash
+   git commit -m "feat: your feature"
+4. Push & open PR
 
 📜 License
-MIT License - Open source with attribution
+MIT License • Open source with attribution
 
 <div align="center"><p>🔨 <strong>Built with passion</strong> by Ahmad Nawabi</p></div>
