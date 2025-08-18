@@ -1,6 +1,6 @@
 # 🚀 Ahmad Nawabi - Full Stack Developer Portfolio  
 
-![Portfolio Screenshot](https://raw.githubusercontent.com/AhmadNawabi/Personal_Website/images/portfolio-preview.png)  
+![Portfolio Screenshot](AhmadNawabi/Personal_Website/images/portfolio-preview.png)  
 *Screenshot: Interactive 3D portfolio with project showcase*
 
 ## 👨‍💻 About the Developer  
