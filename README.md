@@ -1,69 +1,102 @@
-# 🚀 Ahmad Nawabi - Full Stack Developer Portfolio  
+# 🚀 Ahmad Nawabi - Full Stack Web Developer Portfolio  
 
-![Portfolio Screenshot](images/portfolio-preview.png)
-*Screenshot: Interactive 3D portfolio with project showcase*
+<div align="center">
+  <table>
+    <tr>
+      <td align="center">
+        <img src="images/portfolio-preview.png" alt="Desktop Version" width="400"/>
+        <br><em>Desktop View</em>
+      </td>
+      <td align="center">
+        <img src="images/portfolio-preview-mobile.png" alt="Mobile Version" width="200"/>
+        <br><em>Mobile View</em>
+      </td>
+    </tr>
+  </table>
+  <p><em>Interactive 3D portfolio built with HTML5, CSS3, JavaScript (Three.js/GSAP)</em></p>
+</div>
 
-## 👨‍💻 About the Developer  
+## 👨‍💻 About Me  
 **Ahmad Nawabi**  
-📍 **Location:** Tulsa, Oklahoma, USA  
-🔗 **LinkedIn:** [Ahmad Nawabi](https://www.linkedin.com/in/ahmadshamoonnawabi)  
-📂 **GitHub Portfolio:** [github.com/AhmadNawabi](https://github.com/AhmadNawabi)  
+📍 Tulsa, Oklahoma, USA  
+🔗 [LinkedIn](https://www.linkedin.com/in/ahmadshamoonnawabi) | 📂 [GitHub](https://github.com/AhmadNawabi)  
 
-*ALX-certified Software Engineer with expertise in Python, JavaScript, and full-stack development. Passionate about building immersive web experiences and solving complex problems.*  
-
----
-
-## 🌟 Project Overview  
-A **dynamic portfolio website** highlighting my technical skills through:  
-- Interactive 3D elements (Three.js)  
-- Smooth GSAP animations  
-- Mobile-optimized responsive design  
-- Project case studies with code samples  
-
-**Live Demo:** [Visit My Portfolio](https://ahmadnawabi.github.io/Personal_Website)  
+*Full Stack Web Developer with expertise in:*
+- Building responsive, interactive web experiences
+- Optimizing 3D web performance (Three.js)
+- Creating seamless cross-browser animations (GSAP)
+- Developing clean, maintainable codebases
 
 ---
 
-## 🛠️ Technical Implementation  
-
-### 🔧 Key Features  
-| Implemented | Future Improvements |
-|------------|---------------------|
-| ✅ 3D Avatar with Three.js | 🔜 Blog Integration |
-| ✅ GSAP Scroll Animations | 🔜 Dark Mode Toggle |
-| ✅ Mobile-First Responsive Design | 🔜 Backend API Integration |
-| ✅ Downloadable Resume | 🔜 Accessibility Enhancements |
-
-### 🧠 Challenges Overcome  
-1. **3D Performance Optimization**  
-   - Reduced Three.js model polycount by 40% for faster mobile loading.  
-2. **Cross-Browser Compatibility**  
-   - Resolved GSAP animation stuttering in Safari using will-change CSS property.  
-3. **Responsive Breakpoints**  
-   - Implemented custom media queries for seamless tablet/mobile viewing.  
-
----
-
-## 🖥️ Tech Stack  
-
-| Category       | Technologies |
-|----------------|--------------|
-| **Core**       | HTML5, CSS3, JavaScript (ES6+) |
-| **3D Graphics**| Three.js, Blender (modeling) |
-| **Animations** | GSAP, AOS |
-| **Styling**    | CSS Grid/Flexbox, Responsive Media Queries |
-| **Hosting**    | GitHub Pages |
-
----
-
-## 🚀 Setup Guide  
-
-### Prerequisites  
-- Modern browser (Chrome/Firefox recommended)  
-
-### Local Development  
+## 🌟 Project Highlights  
 ```bash
+✨ 3D Web Components (Three.js) 
+✨ 90+ Lighthouse Performance Score
+✨ Mobile-First Responsive Design
+✨ SEO-Optimized Structure
+✨ Interactive GSAP Animations
+Live Demo: Explore Portfolio
+
+🛠️ Tech Stack
+<div align="center"> <table> <tr> <th>Frontend</th> <th>Backend</th> <th>Tools</th> </tr> <tr> <td> • HTML5/CSS3<br> • JavaScript (ES6+)<br> • Three.js<br> • GSAP </td> <td> • Python<br> • Flask<br> • REST APIs </td> <td> • GitHub Pages<br> • Netlify<br> • Chrome DevTools </td> </tr> </table> </div>
+🚀 Complete Setup Guide
+📦 Prerequisites
+Git (Install Guide)
+
+Web browser (Chrome/Firefox recommended)
+
+Node.js (optional for live-server)
+
+🖥️ Local Installation
+bash
+# Clone repository
 git clone https://github.com/AhmadNawabi/Personal_Website.git
 cd Personal_Website
-# Open index.html in browser or use:
-npx live-server --port=5500
+
+# Install dependencies (if any)
+npm install  # Only if package.json exists
+⚡ Running the Project
+Method 1: Simple Browser Launch
+bash
+open index.html        # Mac
+start index.html       # Windows
+xdg-open index.html    # Linux
+Method 2: Development Server (Recommended)
+bash
+npx live-server --port=3000
+Access at: http://localhost:3000
+
+🔍 Debugging Tips
+3D Performance: Use Chrome's Three.js Inspector (DevTools > Console)
+
+Mobile Testing:
+
+bash
+npx serve -l 3000
+Then scan QR code with phone
+
+Animation Debugging: Add gsap.timeline({paused:true}) for frame-by-frame control
+
+🧠 Development Challenges & Solutions
+Challenge	Solution
+3D Model Loading Speed	Compressed textures, reduced polycount by 40%
+Mobile Animation Jank	Implemented will-change: transform CSS
+Cross-Browser Issues	Feature detection + GSAP fallbacks
+🤝 How to Contribute
+Fork the repository
+
+Create a feature branch:
+
+bash
+git checkout -b feature/your-feature
+Commit changes:
+
+bash
+git commit -m "feat: add your feature"
+Push and open a PR
+
+📜 License
+MIT License - Open source with attribution
+
+<div align="center"> <p>🔨 <strong>Built with passion</strong> by Ahmad Nawabi</p> </div>
