@@ -1176,7 +1176,7 @@
     max-width: 100%;
   }
 
-  /* Projects Section */
+  /* Project Section */
   .projects-container {
     grid-template-columns: 1fr;
     padding: 0 1rem;
