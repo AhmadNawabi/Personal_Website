@@ -30,5 +30,118 @@
 - Web browser (Chrome/Firefox recommended)  
 - Node.js (optional for live-server)  
 
-### 🖥️ Local Installation  
-# Clone repository `git clone https://github.com/AhmadNawabi/Personal_Website.git && cd Personal_Website` # Install dependencies (if any) `npm install` # ⚡ Running the Project **Method 1 (Simple Browser Launch):** ```bash open index.html # Mac start index.html # Windows xdg-open index.html # Linux ``` **Method 2 (Recommended Development Server):** ```bash npx live-server --port=3000 ``` → Access: http://localhost:3000 # 🔍 Debugging Tips - **3D Performance:** Chrome's Three.js Inspector (DevTools > Console) - **Mobile Testing:** ```bash npx serve -l 3000 ``` → Scan QR with phone - **Animation Debug:** `gsap.timeline({paused:true})` # 🧠 Development Challenges & Solutions | Challenge | Solution | |-----------|----------| | 3D Model Loading Speed | Compressed textures, -40% polycount | | Mobile Animation Jank | will-change: transform CSS | | Cross-Browser Issues | Feature detection + GSAP fallbacks | # 🤝 How to Contribute 1. Fork repository 2. Create branch: ```bash git checkout -b feature/your-feature ``` 3. Commit changes: ```bash git commit -m "feat: your feature" ``` 4. Push & open PR # 📜 License MIT License • Open source with attribution <p align="center">🔨 <strong>Built with passion</strong> by Ahmad Nawabi</p>
+# Personal Website 🌐
+> A dynamic, interactive personal portfolio built with modern web technologies — blending 3D graphics, smooth animations, and responsive design.  
+<p align="center">🔨 <strong>Built with passion</strong> by <a href="https://github.com/AhmadNawabi">Ahmad Nawabi</a></p>
+
+## 🖥️ Local Installation
+**1. Clone the repository:**  
+```bash
+git clone https://github.com/AhmadNawabi/Personal_Website.git && cd Personal_Website
+
+2. Install dependencies (if any):
+npm install
+
+⚡ Running the Project
+Method 1: Open Directly in Browser
+Launch index.html without a server:
+
+open index.html     # macOS
+start index.html    # Windows
+xdg-open index.html # Linux
+
+Method 2: Development Server (Recommended)
+For live reload and full interactivity:
+npx live-server --port=3000
+profile
+Qwen3-235B-A22B-2507
+2:50 pm
+Thank you for the clarification! It sounds like you're seeing formatting issues when viewing the README — perhaps due to how GitHub or a Markdown viewer is rendering line breaks or spacing.
+
+Below is a truly unified, single-page README.md with no visual breaks or segmentation — all content flows smoothly as one cohesive document, with proper Markdown syntax that ensures it renders as a continuous page on GitHub or any Markdown viewer.
+
+I've minimized excessive whitespace and ensured structural continuity while keeping it clean and readable:
+
+markdown
+
+
+1
+2
+3
+4
+5
+6
+7
+8
+⌄
+⌄
+⌄
+# Personal Website 🌐
+> A dynamic, interactive personal portfolio built with modern web technologies — blending 3D graphics, smooth animations, and responsive design.  
+<p align="center">🔨 <strong>Built with passion</strong> by <a href="https://github.com/AhmadNawabi">Ahmad Nawabi</a></p>
+
+## 🖥️ Local Installation
+**1. Clone the repository:**  
+```bash
+git clone https://github.com/AhmadNawabi/Personal_Website.git && cd Personal_Website
+2. Install dependencies (if any):
+
+bash
+
+
+1
+npm install
+⚡ Running the Project
+Method 1: Open Directly in Browser
+Launch index.html without a server:
+
+bash
+
+
+1
+2
+3
+open index.html     # macOS
+start index.html    # Windows
+xdg-open index.html # Linux
+Ideal for quick static preview. 
+
+Method 2: Development Server (Recommended)
+For live reload and full interactivity:
+
+bash
+
+
+1
+npx live-server --port=3000
+➡️ Access at: http://localhost:3000
+
+🔍 Debugging Tips
+3D Performance: Use Chrome’s Three.js Inspector (DevTools → Console) to debug scenes.
+Mobile Testing: Run npx serve -l 3000 and scan the QR code with your phone.
+Animation Debug: Inspect GSAP timelines using gsap.timeline({ paused: true }) for frame-by-frame control.
+
+🧠 Development
+Challenges & Solutions
+3D Model Loading Speed        |     Compressed textures & 40% reduced polycount
+Mobile Animation Jank         |     will-change: transform for GPU boost
+Cross-Browser Compatibility   |     Feature detection with GSAP fallbacks
+
+🤝 How to Contribute
+Fork the repository
+Create a feature branch:
+bash
+
+
+1 git checkout -b feature/your-feature
+Commit your changes:
+bash
+
+
+1
+git commit -m "feat: describe your change"
+Push and open a Pull Request — we welcome improvements!
+📜 License
+MIT License. Open source with attribution. See LICENSE for details.
+
+<p align="center"><em>Thank you for visiting! 🚀</em></p>
