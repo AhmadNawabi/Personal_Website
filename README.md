@@ -15,7 +15,7 @@
 ✨ 3D Web Components (Three.js)  
 ✨ 90+ Lighthouse Performance Score  
 ✨ Mobile-First Responsive Design  
-✨ SEO-Optimized Structure  
+✨ SEO-Optimized Structure
 ✨ Interactive GSAP Animations  
 🔗 Live Demo: [Explore Portfolio](#)  
 
