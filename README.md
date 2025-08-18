@@ -4,19 +4,17 @@
   <table>
     <tr>
       <td align="center">
-        <img src="images/portfolio-preview.png" alt="Desktop Preview" width="300"/><br>
+        <img src="images/portfolio-preview.png" alt="Desktop Preview" width="500"/><br>
         <em>Desktop View</em>
       </td>
       <td align="center">
-        <img src="images/portfolio-preview-mobile.png" alt="Mobile Preview" width="150"/><br>
+        <img src="images/portfolio-preview-mobile.png" alt="Mobile Preview" width="250"/><br>
         <em>Mobile View</em>
       </td>
     </tr>
   </table>
   <p><em>Interactive 3D portfolio built with HTML5, CSS3, JavaScript (Three.js / GSAP)</em></p>
-</div> 
-
----
+</div>  
 
 <div align="center">
 
@@ -48,7 +46,7 @@ I specialize in building:
 ✨ SEO-Optimized Structure  
 ✨ Interactive GSAP Animations  
 
-🔗 **Live Demo:** [Explore Portfolio](https://ahmadnawabi.github.io/Personal_Website/)  
+🔗 **Live Demo:** [Explore Portfolio](#)  
 
 ---
 
@@ -62,67 +60,55 @@ I specialize in building:
 
 ## 🚀 Setup & Usage  
 
-<details>
-<summary><strong>📦 Installation & Run</strong></summary><br>
-
 **1. Clone the repository**  
-```bash
-git clone https://github.com/AhmadNawabi/Personal_Website.git
-cd Personal_Website
+git clone https://github.com/AhmadNawabi/Personal_Website.git  
+cd Personal_Website  
 
-2. Install dependencies
+**2. Install dependencies**  
+npm install  
 
-npm install
+**3. Run the project**  
 
+Quick preview (no server):  
+open index.html     # macOS  
+start index.html    # Windows  
+xdg-open index.html # Linux  
 
-3. Run the project
+Development server (recommended):  
+npx live-server --port=3000  
 
-Quick preview (no server):
+➡️ Access at: http://localhost:3000  
 
-open index.html     # macOS
-start index.html    # Windows
-xdg-open index.html # Linux
+---
 
+## 🔍 Debugging Tips  
+- 🎭 **3D Performance:** Use Chrome’s Three.js Inspector (DevTools → Console)  
+- 📱 **Mobile Testing:** Run npx serve -l 3000 and scan QR code on phone  
+- ⏱ **Animation Debug:** Use gsap.timeline({ paused: true }) for frame-by-frame control  
 
-Development server (recommended):
+---
 
-npx live-server --port=3000
+## 🧠 Development Challenges & Solutions  
 
+| Challenge | Solution |
+|-----------|----------|
+| ⏳ 3D Model Loading Speed | Compressed textures & 40% reduced polycount |
+| 📱 Mobile Animation Jank | will-change: transform for GPU acceleration |
+| 🌐 Cross-Browser Issues | Feature detection + GSAP fallbacks |
 
-➡️ Access at: http://localhost:3000
+---
 
-</details> <details> <summary><strong>🔍 Debugging Tips</strong></summary><br>
+## 🤝 How to Contribute  
+1. Fork the repository  
+2. Create a feature branch:  
+git checkout -b feature/your-feature  
+3. Commit your changes:  
+git commit -m "feat: describe your change"  
+4. Push and open a Pull Request 🚀  
 
-🎭 3D Performance: Use Chrome’s Three.js Inspector (DevTools → Console)
+---
 
-📱 Mobile Testing: Run npx serve -l 3000 and scan QR code on phone
+## 📜 License  
+MIT License — open-source with attribution. See LICENSE for details.  
 
-⏱ Animation Debug: Use gsap.timeline({ paused: true }) for frame-by-frame control
-
-</details> <details> <summary><strong>🧠 Development Challenges & Solutions</strong></summary><br>
-Challenge	Solution
-⏳ 3D Model Loading Speed	Compressed textures & 40% reduced polycount
-📱 Mobile Animation Jank	will-change: transform for GPU acceleration
-🌐 Cross-Browser Issues	Feature detection + GSAP fallbacks
-</details> <details> <summary><strong>🤝 How to Contribute</strong></summary><br>
-
-Fork the repository
-
-Create a feature branch:
-
-git checkout -b feature/your-feature
-
-
-Commit your changes:
-
-git commit -m "feat: describe your change"
-
-
-Push and open a Pull Request 🚀
-
-</details>
-📜 License
-
-MIT License — open-source with attribution. See LICENSE for details.
-
-<p align="center">🔨 Built with passion by <a href="https://github.com/AhmadNawabi">Ahmad Nawabi</a> | 🌟 Thank you for visiting! 🚀</p> ```
+<p align="center">🔨 Built with passion by <a href="https://github.com/AhmadNawabi">Ahmad Nawabi</a> | 🌟 Thank you for visiting! 🚀</p>
