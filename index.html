@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -19,8 +18,70 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
 
+  <!-- Additional CSS for stable buttons - NO FLASHING -->
+  <style>
+    /* OVERRIDE any flashing/transition issues on project links */
+    .project-links {
+      display: flex;
+      gap: 1rem;
+      margin-top: 1rem;
+      flex-wrap: wrap;
+    }
+    .project-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.7rem 1.3rem;
+      background: #6C63FF;
+      color: white !important;
+      border-radius: 8px;
+      font-weight: 600;
+      font-size: 0.9rem;
+      text-decoration: none;
+      cursor: pointer;
+      border: none;
+      transition: none !important;
+      transform: none !important;
+      animation: none !important;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    /* Simple hover - NO animation, NO flashing */
+    .project-link:hover {
+      background: #5a52e0;
+      color: white !important;
+    }
+    /* Remove any existing animations from parent elements */
+    .project-card:hover .project-inner {
+      transform: none !important;
+    }
+    .project-card:hover .project-image img {
+      transform: none !important;
+    }
+    .project-link i {
+      font-size: 0.9rem;
+    }
+    /* Bullet points styling */
+    .project-bullets {
+      margin: 1rem 0 1.2rem 1.2rem;
+      color: #4a5568;
+      font-size: 0.9rem;
+      line-height: 1.6;
+    }
+    .project-bullets li {
+      margin-bottom: 0.5rem;
+    }
+    /* Ensure no 3D transform on cards */
+    .project-card {
+      transform: none !important;
+    }
+    .project-card:hover {
+      transform: translateY(-5px) !important;
+    }
+    .project-inner {
+      transform-style: flat !important;
+    }
+  </style>
 </head>
-<body>
 <body>
   <!-- Afghan Flag Ribbon -->
   <div class="afghan-ribbon"></div>
@@ -329,15 +390,15 @@
             </div>
             <div class="skill-item">
               <div class="skill-icon">
-                <i class="fab fa-docker"></i>
+                <i class="fab fa-github"></i>
               </div>
               <div class="skill-name">
                 <p>
-                  <span>Docker</span>
-                  <span>70%</span>
+                  <span>GitHub Pages</span>
+                  <span>90%</span>
                 </p>
                 <div class="skill-bar">
-                  <div class="skill-progress" style="width: 70%;"></div>
+                  <div class="skill-progress" style="width: 90%;"></div>
                 </div>
               </div>
             </div>
@@ -368,34 +429,41 @@
         <p>Here are some of my recent projects that showcase my skills and experience</p>
       </div>
       <div class="projects-container">
-        <!-- Project 1 -->
+        <!-- Project 1: SweetRoots Capstone - STABLE BUTTONS -->
         <div class="project-card" data-aos="fade-up" data-aos-delay="100">
           <div class="project-inner">
             <div class="project-image">
-              <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="E-commerce Platform">
+              <img src="images/sweetRoot.png" alt="SweetRoots Plant Tracking Platform">
               <div class="project-tags">
-                <span class="project-tag">React</span>
-                <span class="project-tag">Node.js</span>
-                <span class="project-tag">MongoDB</span>
+                <span class="project-tag">HTML5</span>
+                <span class="project-tag">CSS3</span>
+                <span class="project-tag">JavaScript</span>
+                <span class="project-tag">GitHub Pages</span>
               </div>
             </div>
             <div class="project-content">
-              <h3>Afghan Market</h3>
-              <p>A full-featured e-commerce platform specializing in Afghan products with multi-language support, payment processing, and admin dashboard.</p>
+              <h3>SweetRoots — Roots on Route 66</h3>
+              <p>A community-powered platform for tracking sweet potato plants, clippings, and lineage — like a family tree for agriculture.</p>
+              
+              <ul class="project-bullets">
+                <li><strong>🌱 3+ team members</strong> — Collaborated across front-end, back-end, and deployment roles</li>
+                <li><strong>📊 Full plant lineage tracking</strong> — Designed data structure to trace every clipping back to its origin</li>
+                <li><strong>👥 2 participation modes</strong> — Users can contribute anonymously OR with a registered account</li>
+              </ul>
+              
+              <!-- SIMPLE STABLE BUTTONS - NO FLASHING -->
               <div class="project-links">
-                <a href="#" class="project-link">
-                  <span>Live Demo</span>
-                  <i class="fas fa-external-link-alt"></i>
+                <a href="https://ahmadnawabi.github.io/roots-on-route-66" class="project-link" target="_blank" style="background: #6C63FF; color: white; padding: 8px 20px; border-radius: 6px; text-decoration: none; display: inline-flex; align-items: center; gap: 8px;">
+                  <i class="fas fa-external-link-alt"></i> Live Demo
                 </a>
-                <a href="#" class="project-link">
-                  <span>View Code</span>
-                  <i class="fab fa-github"></i>
+                <a href="https://github.com/AhmadNawabi" class="project-link" target="_blank" style="background: #2D3748; color: white; padding: 8px 20px; border-radius: 6px; text-decoration: none; display: inline-flex; align-items: center; gap: 8px;">
+                  <i class="fab fa-github"></i> View Code
                 </a>
               </div>
             </div>
           </div>
         </div>
-        <!-- Project 2  -->
+        <!-- Project 2 -->
         <div class="project-card" data-aos="fade-up" data-aos-delay="200">
           <div class="project-inner">
             <div class="project-image">
@@ -410,14 +478,8 @@
               <h3>TaskFlow Pro</h3>
               <p>Productivity application with Kanban boards, team collaboration, real-time updates, and analytics dashboard built with MERN stack.</p>
               <div class="project-links">
-                <a href="#" class="project-link">
-                  <span>Live Demo</span>
-                  <i class="fas fa-external-link-alt"></i>
-                </a>
-                <a href="#" class="project-link">
-                  <span>View Code</span>
-                  <i class="fab fa-github"></i>
-                </a>
+                <a href="#" class="project-link" style="background: #6C63FF; color: white; padding: 8px 20px; border-radius: 6px; text-decoration: none;">Live Demo</a>
+                <a href="#" class="project-link" style="background: #2D3748; color: white; padding: 8px 20px; border-radius: 6px; text-decoration: none;">View Code</a>
               </div>
             </div>
           </div>
@@ -437,14 +499,8 @@
               <h3>SocialPulse Analytics</h3>
               <p>Comprehensive social media management dashboard with scheduling, analytics visualization, and cross-platform engagement metrics.</p>
               <div class="project-links">
-                <a href="#" class="project-link">
-                  <span>Live Demo</span>
-                  <i class="fas fa-external-link-alt"></i>
-                </a>
-                <a href="#" class="project-link">
-                  <span>View Code</span>
-                  <i class="fab fa-github"></i>
-                </a>
+                <a href="#" class="project-link" style="background: #6C63FF; color: white; padding: 8px 20px; border-radius: 6px; text-decoration: none;">Live Demo</a>
+                <a href="#" class="project-link" style="background: #2D3748; color: white; padding: 8px 20px; border-radius: 6px; text-decoration: none;">View Code</a>
               </div>
             </div>
           </div>
@@ -464,14 +520,8 @@
               <h3>CodeCraft IDE</h3>
               <p>Browser-based code editor with syntax highlighting, real-time collaboration, and cloud compilation supporting multiple languages.</p>
               <div class="project-links">
-                <a href="#" class="project-link">
-                  <span>Live Demo</span>
-                  <i class="fas fa-external-link-alt"></i>
-                </a>
-                <a href="#" class="project-link">
-                  <span>View Code</span>
-                  <i class="fab fa-github"></i>
-                </a>
+                <a href="#" class="project-link" style="background: #6C63FF; color: white; padding: 8px 20px; border-radius: 6px; text-decoration: none;">Live Demo</a>
+                <a href="#" class="project-link" style="background: #2D3748; color: white; padding: 8px 20px; border-radius: 6px; text-decoration: none;">View Code</a>
               </div>
             </div>
           </div>
@@ -491,14 +541,8 @@
               <h3>TeamSync</h3>
               <p>Real-time team collaboration platform with video conferencing, document sharing, and project management features.</p>
               <div class="project-links">
-                <a href="#" class="project-link">
-                  <span>Live Demo</span>
-                  <i class="fas fa-external-link-alt"></i>
-                </a>
-                <a href="#" class="project-link">
-                  <span>View Code</span>
-                  <i class="fab fa-github"></i>
-                </a>
+                <a href="#" class="project-link" style="background: #6C63FF; color: white; padding: 8px 20px; border-radius: 6px; text-decoration: none;">Live Demo</a>
+                <a href="#" class="project-link" style="background: #2D3748; color: white; padding: 8px 20px; border-radius: 6px; text-decoration: none;">View Code</a>
               </div>
             </div>
           </div>
@@ -518,14 +562,8 @@
               <h3>AI Content Generator</h3>
               <p>AI-powered content creation platform with natural language processing and image generation capabilities.</p>
               <div class="project-links">
-                <a href="#" class="project-link">
-                  <span>Live Demo</span>
-                  <i class="fas fa-external-link-alt"></i>
-                </a>
-                <a href="#" class="project-link">
-                  <span>View Code</span>
-                  <i class="fab fa-github"></i>
-                </a>
+                <a href="#" class="project-link" style="background: #6C63FF; color: white; padding: 8px 20px; border-radius: 6px; text-decoration: none;">Live Demo</a>
+                <a href="#" class="project-link" style="background: #2D3748; color: white; padding: 8px 20px; border-radius: 6px; text-decoration: none;">View Code</a>
               </div>
             </div>
           </div>
