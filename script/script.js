@@ -228,16 +228,8 @@
     };
     init3DAvatar();
     // CV Download Functionality
-document.getElementById("downloadCV").addEventListener("click", function (event) {
-  event.preventDefault(); // Stop any default link behavior
-  
-  // Create download link to actual resume
-  const downloadLink = document.createElement("a");
-  downloadLink.href = "resume/Ahmad_Resume.pdf"; // Use clean filename
-  downloadLink.download = "Ahmad_Resume.pdf";
-  
-  // Trigger download
-  document.body.appendChild(downloadLink);
-  downloadLink.click();
-  document.body.removeChild(downloadLink);
-});
+    document.getElementById("downloadCV").addEventListener("click", function (event) {
+      setTimeout(() => {
+        console.log("Downloading Ahmad_Resume.pdf");
+      }, 100);
+    });
