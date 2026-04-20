@@ -228,115 +228,16 @@
     };
     init3DAvatar();
     // CV Download Functionality
-    document.getElementById("downloadCV").addEventListener("click", function () {
-      const link = document.createElement("a");
-      const cvContent = `
-        <!DOCTYPE html>
-        <html>
-        <head>
-          <title>Ahmad Nawabi - CV</title>
-          <style>
-            body {
-              font-family: 'Poppins', sans-serif;
-              line-height: 1.6;
-              max-width: 800px;
-              margin: 0 auto;
-              padding: 2rem;
-              color: #333;
-            }
-            h1, h2 {
-              font-family: 'Raleway', sans-serif;
-              color: #6C63FF;
-            }
-            .section {
-              margin-bottom: 2rem;
-              padding-bottom: 1rem;
-              border-bottom: 1px solid #eee;
-            }
-            .contact-info {
-              margin-bottom: 1.5rem;
-            }
-            .skills-list {
-              display: grid;
-              grid-template-columns: repeat(3, 1fr);
-              gap: 1rem;
-            }
-            .experience-item {
-              margin-bottom: 1.5rem;
-            }
-            .experience-title {
-              font-weight: 600;
-              margin-bottom: 0.5rem;
-            }
-            .experience-date {
-              color: #666;
-              font-size: 0.9rem;
-              margin-bottom: 0.5rem;
-            }
-          </style>
-        </head>
-        <body>
-          <h1>Ahmad Nawabi</h1>
-          <p>Full Stack Developer & UI/UX Specialist</p>
-          <div class="contact-info">
-            <p><strong>Email:</strong> ahmad@example.com</p>
-            <p><strong>Phone:</strong> +1 (234) 567-890</p>
-            <p><strong>Location:</strong> Tulsa, Oklahoma, USA</p>
-            <p><strong>Portfolio:</strong> https://ahmadnawabi.com</p>
-            <p><strong>GitHub:</strong> github.com/ahmadnawabi</p>
-          </div>
-          <div class="section">
-            <h2>Professional Summary</h2>
-            <p>Innovative Full Stack Developer with 5+ years of experience designing and building web applications...</p>
-          </div>
-          <div class="section">
-            <h2>Technical Skills</h2>
-            <div class="skills-list">
-              <div>
-                <h3>Frontend</h3>
-                <ul>
-                  <li>React.js (Advanced)</li>
-                  <li>JavaScript/ES6+</li>
-                  <li>HTML5 & CSS3</li>
-                  <li>Redux & Context API</li>
-                  <li>Styled Components</li>
-                  <li>GSAP Animations</li>
-                </ul>
-              </div>
-              <div>
-                <h3>Backend</h3>
-                <ul>
-                  <li>Node.js</li>
-                  <li>Express.js</li>
-                  <li>MongoDB</li>
-                  <li>RESTful APIs</li>
-                  <li>GraphQL</li>
-                  <li>Authentication (JWT)</li>
-                </ul>
-              </div>
-              <div>
-                <h3>Tools & Other</h3>
-                <ul>
-                  <li>Git & GitHub</li>
-                  <li>Docker</li>
-                  <li>AWS Services</li>
-                  <li>CI/CD Pipelines</li>
-                  <li>Agile Methodologies</li>
-                  <li>UI/UX Principles</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </body>
-        </html>
-      `;
-      const blob = new Blob([cvContent], { type: "text/html" });
-      const url = URL.createObjectURL(blob);
-      link.href = url;
-      link.download = "Ahmad_Nawabi_CV.html";
-      document.body.appendChild(link);
-      link.click();
-      document.body.removeChild(link);
-      URL.revokeObjectURL(url);
-      alert("CV download started!");
-    });
+document.getElementById("downloadCV").addEventListener("click", function (event) {
+  event.preventDefault(); // Stop any default link behavior
+  
+  // Create download link to actual resume
+  const downloadLink = document.createElement("a");
+  downloadLink.href = "resume/Ahmad_Nawabi_Resume.pdf"; // Use clean filename
+  downloadLink.download = "Ahmad_Nawabi_Resume.pdf";
+  
+  // Trigger download
+  document.body.appendChild(downloadLink);
+  downloadLink.click();
+  document.body.removeChild(downloadLink);
+});
