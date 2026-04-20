@@ -233,8 +233,8 @@ document.getElementById("downloadCV").addEventListener("click", function (event)
   
   // Create download link to actual resume
   const downloadLink = document.createElement("a");
-  downloadLink.href = "resume/Ahmad_Nawabi_Resume.pdf"; // Use clean filename
-  downloadLink.download = "Ahmad_Nawabi_Resume.pdf";
+  downloadLink.href = "resume/Ahmad_Resume.pdf"; // Use clean filename
+  downloadLink.download = "Ahmad_Resume.pdf";
   
   // Trigger download
   document.body.appendChild(downloadLink);
